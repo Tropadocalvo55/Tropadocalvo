@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Seguidores - Netflix Style</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-5qIYZ4vCJzJYaN4eBMB1D/B4uU74+VjRMcmPbdgJvYbsRbsFSHdK6gqM9N2mbMOxGK+RFyuk5R2WXXOcQ08ApQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Estilo adicional */
+        .section-form {
+            padding: 50px 0;
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="#">Venda de Seguidores</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Início</a> <!-- Link para a página inicial -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#formulario">Comprar Seguidores</a> <!-- Ancoragem adicionada -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#seguidores-br">Seguidores Brasileiros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#seguidores-int">Seguidores Internacionais</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="formulario" class="section-form"> <!-- Ancoragem adicionada -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2>Comprar Seguidores</h2>
+                    <p>Digite o nome de usuário do Instagram ou link e o total de seguidores desejado:</p>
+                    <div class="form-group">
+                        <label for="username">Nome de usuário do Instagram ou link:</label>
+                        <input type="text" class="form-control" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="followers">Total de seguidores desejado:</label>
+                        <input type="number" class="form-control" id="followers" name="followers" required>
+                    </div>
+                    <a href="checkout.html" class="btn btn-primary">Enviar Pedido</a> <!-- Redirecionamento para a página de checkout -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Venda de Seguidores - Netflix Style</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
